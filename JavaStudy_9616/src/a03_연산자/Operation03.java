@@ -6,11 +6,20 @@ public class Operation03 {
 		int num1 = 10;
 		int num2 = 20;
 		
-		int result1 = num1 < num2 ? 1 : 2;
+		int result1 = num1 < num2 ? 1 : 2; // 조건에 따라서..
 		
 		System.out.println(result1);
 		
 		boolean result2 = num1 > num2 ? true : false;
+		
+		int score = 85;
+		char grade = score > -1 && score < 101 ?
+				score > 89 ? 'A' :
+					score > 79 ? 'B' :
+						score > 69 ? 'C' :
+							score > 59 ? 'D':
+								score > 0 ? 'F' : 'F'
+												: 'X' ;
 
 	}
 
