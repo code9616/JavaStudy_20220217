@@ -4,7 +4,6 @@ public class StudentInfo {
 
 	public static void main(String[] args) {
 		String name = "김지훈";
-		char name1 = '김';
 		/*
 		 * 2022년 02월 22일 코리아아이티아카데미부산 학생정보
 		 * Year   month  day  academy(문자열)
@@ -40,7 +39,7 @@ public class StudentInfo {
 		 */
 		
 		int num = Integer.parseInt("100");
-		double dNum = Double.parseDouble("3.14");
+		double dNum = Double.parseDouble("3.41");
 		System.out.println(num + 20);
 		System.out.println(dNum + 20);
 		System.out.println(!Boolean.parseBoolean("true"));
