@@ -23,7 +23,7 @@ public class MenuEx4 {
 		if(select == '1') {
 			secondFlag = true;
 			while(secondFlag) {
-			System.out.println("[바탕화면 폴더");
+			System.out.println("[바탕화면 폴더]");
 			System.out.println("1. 롤");
 			System.out.println("2. 크롬");
 			System.out.println("b. 뒤로가기");
