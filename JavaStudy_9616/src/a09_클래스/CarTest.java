@@ -28,6 +28,12 @@ public class CarTest {
 	
 	public static void main(String[] args) {
 		Car c1 = new Car();
+		//Car c2; // 변수선언(Car 참조 자료형)
+		new Car(); //Car 객체 생성 -> 힙메모리 영역에 Car클래스 사이즈 만큼 메모리를 빌려 할당하는 것
+		//10002588
+
+		String str = "김지훈";
+		
 		c1.company = "KIA";
 		c1.model = "carnival";
 		c1.oil = 5;
