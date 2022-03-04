@@ -13,8 +13,7 @@ public class Student {
 
 	public Student() { //기본 생성자
 		System.out.println("기본생성자 호출");
-		
-	}
+			}
 	public Student(String schoolName, String studentName) { 
 		this.schoolName = schoolName;
 		this.studentName = studentName;

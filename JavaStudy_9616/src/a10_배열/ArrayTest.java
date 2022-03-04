@@ -14,13 +14,16 @@ package a10_배열;
 public class ArrayTest {
 
 	public static void main(String[] args) {
-//		int[] numbers = new int[10];
-//		
-//		numbers[1] = 100;
-//		
-//		for(int i = 0; i < 10; i++) {
-//			System.out.println(numbers[i]);
-//		}
+		int[] numbers = new int[10];
+		
+		numbers[1] = 100;
+		
+		for(int i = 0; i < 10; i++) {
+			System.out.println(numbers[i]);
+		}
+		
+		System.out.println("*****************************");
+		
 		/*
 		 * String 배열 10개의 공간을 생성
 		 * 가나다라마바사아자차
@@ -44,7 +47,12 @@ public class ArrayTest {
 			System.out.println(kor[i]);
 		}
 		
+		int[] numArray = {1, 3, 5, 7, 2, 4, 6};
+		int[] numArray2 = new int[100];
 		
+		for(int i = 0; i < numArray.length; i++) {
+			System.out.println(numArray[i]);
+		}
 		
 
 	}

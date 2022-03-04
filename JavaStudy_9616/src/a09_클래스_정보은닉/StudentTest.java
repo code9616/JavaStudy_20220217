@@ -27,11 +27,11 @@ package a09_클래스_정보은닉;
 public class StudentTest {
 
 	public static void main(String[] args) {
-//		Student student1 = new Student("코리아아이티아카데미", 20220001, 1, "김지훈");
-//		Student student2 = new Student("코리아아이티아카데미", 20220002, 3, "김지한");
-//		
-//		student1.showStudentInfo();
-//		student2.showStudentInfo();
+		Student student1 = new Student("코리아아이티아카데미", 20220001, 1, "김지훈");
+		Student student2 = new Student("코리아아이티아카데미", 20220002, 3, "김지한");
+		
+		student1.showStduentInfo();
+		student2.showStduentInfo();
 		
 		
 
