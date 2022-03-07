@@ -12,7 +12,8 @@ public class Tumbler extends Product{
 		System.out.println("텀블러만 가지고 있는 메소드");
 	}
 	
-	public void showTumblerInfo() {
+	@Override
+	public void showProduct() {
 		super.showProduct();
 		System.out.println("뚜껑타입: " + cap);
 		System.out.println();
