@@ -26,6 +26,7 @@ public class ProductTest {
 		
 		for(int i = 0; i < products.length; i++) {
 			products[i].showProduct();
+			
 			if(products[i] instanceof Tumbler) {
 				Tumbler tumbler2 = (Tumbler)products[i];
 				tumbler2.tumblerTest();
