@@ -20,6 +20,10 @@ public class InterfaceTest {
 		for(int i = 0; i < buttons.length; i++) {
 			buttons[i].onClick();
 			buttons[i].sendSignal();
+			// ex
+			/* 인터페이스만 같으면 제품(?)을 바꿔도 정상으로 작동함 */
+			/* 자동차 바퀴 펑크가 나면 바퀴만 갈면 되는데 자동차와 바퀴가 일체형이면 전부 바꿔야하기 때문에 비효율적이다 
+			 *  일체형이 아니라 분리형 객체 지향 프로그램을 만들어야함*/
 		}
 	}
 
