@@ -4,7 +4,7 @@ import a13_인터페이스2.data.UserData;
 import a13_인터페이스2.model.User;
 
 public class UserServiceImpl implements UserService{
-	private final UserData usersData;
+	private final UserData userData;
 
 	
 	public UserServiceImpl(UserData userData) {
@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService{
 	}
 	@Override
 	public void addUser(User user) {
-		User[] users = userData.getUsers();  //user배열 주소 가져옴.
+		User[] users = userData.getUser();  //user배열 주소 가져옴.
 		for(int i = 0; i < users.length; i++) {  //user배열에서 빈 공간이 있으면 입력한 user객체를 배열에 저정하겠다.
 			if(users[i] == null) {
 				users[i] = user;
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public User[] getUsers() {
-		return userData.getUsers();
+		return userData.getUser();
 		
 	}
 

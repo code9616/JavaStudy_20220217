@@ -1,6 +1,5 @@
 package a13_인터페이스2.view;
 
-public class Index {
-	public void show() {
-	}
+public interface Index {
+	public void show();
 }
