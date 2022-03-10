@@ -6,25 +6,29 @@ public class UserData {
 	private User[] users;
 	
 	public UserData() {
-		// TODO Auto-generated constructor stub
+
 	}
 
-	public UserData(User[] user) {
+	public UserData(User[] users) {
 		super();
 		this.users = users;
 	}
 
-	public User[] getUser() {
+	public User[] getUsers() {
 		return users;
 	}
 
-	public void setUser(User[] user) {
+	public void setUsers(User[] users) {
 		this.users = users;
 	}
 
 	public void showUsers() {
 		for(int i = 0; i < users.length; i++) {
-			users[i].showUser();
+			if(users[i] == null) {
+				continue;
+			}
+			//users[i].showUser();
+			System.out.println(users[i]);
 		}
 	}
 }

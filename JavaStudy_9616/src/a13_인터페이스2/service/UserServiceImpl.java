@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService{
 	}
 	@Override
 	public void addUser(User user) {
-		User[] users = userData.getUser();  //user배열 주소 가져옴.
+		User[] users = userData.getUsers();  //user배열 주소 가져옴.
 		for(int i = 0; i < users.length; i++) {  //user배열에서 빈 공간이 있으면 입력한 user객체를 배열에 저정하겠다.
 			if(users[i] == null) {
 				users[i] = user;
@@ -25,14 +25,25 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public User[] getUsers() {
-		return userData.getUser();
+		return userData.getUsers();
 		
 	}
 
 	@Override
 	public User getUser(String username) {
 		//반복문을 사용해서 배열에 들어있는 user객체들 중에 매개변수(우리가 찾고자하는 username)를 가진 user객체를 return
-		return null;
+		User[] users = userData.getUsers();
+		User user = null;
+		
+		for(int i = 0; i < users.length; i++) {
+			if(users[i] != null && users[i].getUsername().equals(username)) {
+					user = users[i];
+							break;
+				
+			}
+		}
+		
+		return user;
 	}
 
 
