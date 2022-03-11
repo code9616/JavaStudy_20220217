@@ -1,25 +1,26 @@
 package a13_인터페이스2.data;
 
 import a13_인터페이스2.model.User;
+import lombok.Data;
 
+@Data
 public class UserData {
+	private static UserData instance;
 	private User[] users;
 	
-	public UserData() {
-
-	}
-
-	public UserData(User[] users) {
-		super();
+	private UserData(User[] users) {
 		this.users = users;
 	}
 
-	public User[] getUsers() {
-		return users;
+	public static UserData getInstance(User[] users) {
+		if(instance == null) {
+		instance =new UserData(users);	
+		}
+		return instance;
 	}
-
-	public void setUsers(User[] users) {
-		this.users = users;
+	
+	public static UserData getInstance() {
+		return instance;
 	}
 
 	public void showUsers() {
