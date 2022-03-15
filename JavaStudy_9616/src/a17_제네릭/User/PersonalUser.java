@@ -1,4 +1,5 @@
-package a17_제네릭;
+
+package a17_제네릭.User ;
 
 import a13_인터페이스2.model.User;
 import lombok.AllArgsConstructor;
